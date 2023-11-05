@@ -2141,9 +2141,9 @@ canvas {
 }
 .login_form{
 
-	border-bottom: 1px dotted;
+    border-bottom: 1px dotted;
 	background: url('../img/regi_bg.jpg') no-repeat;
-
+    background-size: cover;
 	background-attachment: fixed;
 
 }
