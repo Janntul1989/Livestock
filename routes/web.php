@@ -6,6 +6,7 @@ use app\http\Controllers\FrontEnd\RegistrationController;
 use app\http\Controllers\FrontEnd\DiseaseController;
 use app\http\Controllers\FrontEnd\RationController;
 use app\http\Controllers\FrontEnd\TokenController;
+use app\http\Controllers\FrontEnd\token_generateController;
 use App\Http\Controllers\AuthController;
 /*
 |--------------------------------------------------------------------------
@@ -46,6 +47,12 @@ Route::get('/Token',function()
 {
  return view('FrontEnd.Token');
 })->name('token');
+
+
+Route::get('/token_generate',function()
+{
+ return view('FrontEnd.token_generate');
+})->name('token_generate');
 
 // Route::get('/alert_box', function () {
 //     return view('FrontEnd.alert_box');

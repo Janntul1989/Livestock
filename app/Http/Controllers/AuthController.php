@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Registration;
 use App\Models\User;
+
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 
@@ -29,9 +30,10 @@ class AuthController extends Controller
 
 
     $user = User::create([
-      "name" => $request->full_name,
-      "number" => $request->number,
-    ]);
+        "name" => $request->full_name,
+        "number" => $request->number,
+      ]);
+
 
 
     Registration::create([
